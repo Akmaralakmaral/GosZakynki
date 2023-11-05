@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Объявления - Сайт госзакупок</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Подключаем внешний CSS файл -->
+    <style>
+        /* Стили для кнопок */
+        .announcement-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .announcement-buttons button {
+            background-color: #007acc;
+            color: #fff;
+            border: none;
+            padding: 15px 30px; /* Увеличим размер кнопок */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .announcement-buttons button:hover {
+            background-color: #005ea6; /* Изменение цвета при наведении */
+        }
+
+        #search {
+            width: 80%; /* Увеличим ширину поисковой строки */
+            padding: 15px; /* Увеличим внутренний отступ */
+            font-size: 16px; /* Увеличим размер шрифта */
+            border: 2px solid #007acc; /* Добавим границу */
+            border-radius: 10px; /* Закруглим углы */
+        }
+
+        #search:focus {
+            outline: none; /* Уберем фокусировку при клике */
+        }
+
+        .tender-divider {
+            background-color: #1a5eb9; /* Цвет разделителя тендеров */
+            height: 2px;
+            margin: 20px 0;
+        }
+
+        .tender-card {
+            background-color: #f4f4f4; /* Цвет фона тендера */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-bottom: 20px; /* Добавляем отступ после каждого тендера */
+        }
+
+        .tender-card h3 {
+            color: #007acc; /* Цвет заголовков тендера */
+            font-size: 24px;
+        }
+
+        .tender-card p {
+            color: #000; /* Цвет текста тендера */
+        }
+        .tender-card table th {
+            padding: 10px; /* Добавим внутренний отступ для заголовков столбцов */
+        }
+        .tender-card table td {
+    text-align: center;
+    vertical-align: middle; /* Выравнивание по центру по вертикали */
+}
+
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Официальный портал государственных закупок</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="Tenders.html">Объявления</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="jaloby.html">Жалобы</a></li>
+            <li><a href="#">Голосование</a></li>
+            <li><a href="#">Методы закупок</a></li>
+        </ul>
+    </nav>
+    <input type="text" id="search" placeholder="По Наименованию Объявления"> <!-- Поисковая строка -->
+</header>
+<main>
+    <section>
+        <h2 class="announcement-buttons">Объявления
+            <button id="button1">1</button>
+            <button id="button2">2</button>
+            <button id="button3">3</button>
+            <button id="button4">4</button>
+            <button id="button5">5</button>
+            <button id="button6">6</button>
+            <button id="button7">7</button>
+            <button id="button9">9</button>
+            <button id="button10">10</button>
+        </h2>
+    </section>
+    <div class="tender-divider"></div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование организации</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>6799042397609</td>
+                <td>Товары </td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$20,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+            <!-- Здесь идут остальные тендеры -->
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>8900042397609</td>
+                <td>Товары</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$80,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>98789042397609</td>
+                <td>Товары</td>
+                <td><a href="tender2.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>2311042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>7865042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>8955842397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>2311042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>6781042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>2311042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <div class="tender-card">
+        <table>
+            <tr>
+                <th>Номер тендера</th>
+                <th>Вид закупки</th>
+                <th>Наименование закупки</th>
+                <th>Метод закупок</th>
+                <th>Планируемая сумма</th>
+                <th>Дата опубликования</th>
+                <th>Срок подачи предложений</th>
+            </tr>
+            <tr>
+                <td>6781042397609</td>
+                <td>Поставка</td>
+                <td><a href="tender1.html">Закупка товаров</a></td>
+                <td>Конкурс</td>
+                <td>$10,000</td>
+                <td>2023-11-05</td>
+                <td>2023-12-01</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Повторяйте блок .tender-card для каждого тендера -->
+</main>
+<footer>
+    <p>&copy; 2023 Сайт госзакупок</p>
+</footer>
+<script>
+    // Получаем ссылки на кнопки
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    var button3 = document.getElementById("button3");
+    // Добавляем обработчики событий для кнопок
+    button1.addEventListener("click", function() {
+        window.location.href = "Tenders.html"; // Переход на страницу tender1.html
+    });
+    button2.addEventListener("click", function() {
+        window.location.href = "tender11.html"; // Переход на страницу tender2.html
+    });
+    button3.addEventListener("click", function() {
+        window.location.href = "tender12.html"; // Переход на страницу tender3.html
+    });
+    // Добавьте аналогичный код для остальных кнопок
+</script>
+
+</body>
+</html>

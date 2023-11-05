@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Голосование</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007acc;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    header img {
+      width: 100px; /* Укажите желаемую ширину герба */
+      height: auto;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #007acc;
+    }
+
+    footer {
+      background-color: #007acc;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    form {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    select, textarea, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+     /* Стили для выпадающего списка */
+        .contact-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #007acc;
+            min-width: 160px;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .contact-dropdown:hover .contact-dropdown-content {
+            display: block;
+        }
+
+        .contact-dropdown a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+  </style>
+</head>
+<body>
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="Tenders.html" data-menu-submenu-hook="" data-menu-item-number="1"
+          style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Главная</a></li><li></li>
+      <li><a href="index.html"  style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Объявления</a></li>
+      <li><a href="aboutas.html" style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">О нас</a></li>
+      <li><a href="Contacts.html" style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Контакты</a></li>
+      <li><a href="jaloby.html" style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Жалобы</a></li>
+      <li><a href="golos.html" style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Голосование</a></li>
+      <li><a href="Methods.html" style="color:#ffffff;font-size:14px;font-weight:500;font-family:'Gilroy';text-transform:uppercase;">Методы закупок</a></li>
+      <li class="contact-dropdown">
+                <a href="#">Связаться</a>
+                <div class="contact-dropdown-content">
+                    <a href="https://xn--80affa3aj0al.xn--80asehdb/#@Abulhair?start=Привет">Telegram</a>
+                    <a href="https://wa.me/996709162333?text=Привет">WhatsApp</a>
+                </div>
+            </li>
+      </ul>
+    </nav>
+    <h1>Голосование</h1>
+  </header>
+  <main>
+  <section id="reason-section">
+    <h2>Голосование</h2>
+    <p>Выберите причину голосования и нажмите "Начать голосование":</p>
+    <form id="reason-form">
+      <label for="reason">Причина голосования:</label>
+      <select id="reason" name="reason">
+        <option value="prisvoenie">Подозрение в присвоении бюджетных средств</option>
+        <option value="drugoe">Другое</option>
+      </select>
+      <br>
+      <button type="button" id="start-voting-button">Начать голосование</button>
+    </form>
+  </section>
+
+  <section id="voting-section" style="display: none;">
+    <h2>Форма голосования</h2>
+    <form id="voting-form">
+      <p>Описание проблемы:</p>
+      <textarea id="problem-description" name="problem-description" rows="4" cols="50"></textarea>
+      <p>Выберите или добавьте варианты ответа:</p>
+      <div id="answer-options">
+        <input type="text" id="custom-answer" placeholder="Введите свой вариант ответа">
+      </div>
+      <button type="button" id="add-answer-button">Добавить вариант ответа</button>
+      <p>Выбранные варианты ответа:</p>
+      <div id="selected-answers"></div>
+      <button type="submit">Отправить голос</button>
+    </form>
+  </section>
+</main>
+
+  <footer>
+    <p>&copy; 2023 Официальный портал государственных закупок Кыргызской Республики</p>
+  </footer>
+<script>
+
+  // JavaScript for showing/hiding the voting form and managing answer options
+ const startVotingButton = document.getElementById('start-voting-button');
+  const reasonSection = document.getElementById('reason-section');
+  const votingSection = document.getElementById('voting-section');
+  const customAnswerInput = document.getElementById('custom-answer');
+  const addAnswerButton = document.getElementById('add-answer-button');
+  const selectedAnswers = document.getElementById('selected-answers');
+  const answerOptions = [];
+
+
+  startVotingButton.addEventListener('click', function() {
+    reasonSection.style.display = 'none';
+    votingSection.style.display = 'block';
+  });
+  startVotingButton.addEventListener('click', function() {
+      reasonForm.style.display = 'none';
+      votingForm.style.display = 'block';
+  });
+
+  addAnswerButton.addEventListener('click', function() {
+    const customAnswer = customAnswerInput.value.trim();
+    if (customAnswer !== '') {
+      answerOptions.push(customAnswer);
+      customAnswerInput.value = '';
+      updateSelectedAnswers();
+    }
+  });
+
+  function updateSelectedAnswers() {
+    selectedAnswers.innerHTML = '';
+    answerOptions.forEach((answer, index) => {
+      const answerElement = document.createElement('div');
+      answerElement.innerHTML = <input type="checkbox" name="selected-answers" value="${answer}" id="answer${index}"><label for="answer${index}">${answer}</label>;
+      selectedAnswers.appendChild(answerElement);
+    });
+  }
+</script>
+ <script>
+        const toggleButtons = document.querySelectorAll('.toggle-button');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

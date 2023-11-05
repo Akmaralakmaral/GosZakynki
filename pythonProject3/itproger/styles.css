@@ -1,0 +1,66 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('bishkek.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 122, 204, 0.9);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #007acc;
+  font-size: 24px;
+}
+
+footer {
+  background-color: rgba(0, 122, 204, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.toggle-content {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1
