@@ -305,6 +305,19 @@
         <img src="flak.jpg" alt="Изображение 8">
     </button>
     </main>
+  <script>
+        const buttons = document.querySelectorAll('button');
+        const sections = document.querySelectorAll('.section');
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                sections.forEach((section) => {
+                    section.style.display = 'none';
+                });
+                sections[index].style.display = 'block';
+            });
+        });
+    </script>
 <footer>
   <p>&copy; 2023 Официальный портал государственных закупок</p>
 </footer>
